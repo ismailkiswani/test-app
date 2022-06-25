@@ -1,4 +1,10 @@
+
 <h1>Server Component</h1>
+<hr>
+<label>Server Name</label>
+<input title="ServerName" type="text" class="form-control"
+(input)="OnUpdateServer($event)">
+<p>{{ ServerName }}</p>
 <button class="btn btn-primary" (click)="OnCreateServer()" [disabled]="!AllowServer">Add Server</button>
 <p> {{ ServerCreationStatus }} </p>
 <h3>Server ID {{ ID }} is {{ Status }}</h3>
