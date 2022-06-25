@@ -1,3 +1,4 @@
 <h1>Server Component</h1>
-<button class="btn btn-primary" [disabled]="!AllowServer">Add Server</button>
+<button class="btn btn-primary" (click)="OnCreateServer()" [disabled]="!AllowServer">Add Server</button>
+<p> {{ ServerCreationStatus }} </p>
 <h3>Server ID {{ ID }} is {{ Status }}</h3>
