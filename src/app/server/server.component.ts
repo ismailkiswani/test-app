@@ -1,10 +1,20 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
     selector: 'app-server',
-    template: '<app-servers></app-servers><app-servers></app-servers>'
+    templateUrl: './server.component.html'
 })
-export class ServerComponent
+export class ServerComponent implements OnInit
 {
+   ID:Number=10;
+   Status:String="Offline";
+   AllowServer:Boolean=false;
+   constructor()
+   {
+    setTimeout(() => this.AllowServer=true,2000);
 
+   }
+   ngOnInit(): void {
+       
+   }
 }
