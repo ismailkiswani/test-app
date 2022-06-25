@@ -9,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'ProjectX';
+  ID:Number=10;
+  Status:String="Offline";
 }
