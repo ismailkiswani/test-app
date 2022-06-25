@@ -11,4 +11,7 @@
 <p> {{ ServerCreationStatus }} </p>
 <h3>Server ID {{ ID }} is {{ Status }}</h3>
 
-<p *ngIf="ServerCreated"> Server was Created, Server name is {{ ServerName }}</p>
+<p *ngIf="ServerCreated; else noServer"> Server was Created, Server name is {{ ServerName }}</p>
+<ng-template #noServer>
+    <p>No Server was Created!</p>
+</ng-template>
